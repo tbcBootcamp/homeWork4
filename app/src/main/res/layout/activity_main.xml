@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/ivRectangle"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="20dp"
+        android:outlineSpotShadowColor="@color/light_green"
+        android:backgroundTint="@color/light_green"
+        android:layout_marginTop="139dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="349dp"
+        android:layout_height="397dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRectangle">
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="209dp"
+            android:layout_height="53dp"
+            android:fontFamily="@font/font1bold"
+            android:lineHeight="49.22dp"
+            android:text="@string/hello"
+            android:textColor="@color/white"
+            android:textSize="42sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBack"
+            android:layout_width="58dp"
+            android:layout_height="59dp"
+            android:background="@drawable/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnNext" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="245dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/next_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnBack" />
+
+        <TextView
+            android:id="@+id/tvLetsIntroduce"
+            android:layout_width="136dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/font2"
+            android:lineHeight="28.13dp"
+            android:text="@string/lets_introduce"
+            android:textColor="@color/grey"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="347dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="38dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <ImageView
+                android:id="@+id/ivIconMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_kacuna" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:background="@null"
+                android:fontFamily="@font/font2"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivIconMan"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vline"
+                android:layout_width="291dp"
+                android:layout_height="2dp"
+                android:alpha="0.05"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="347dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="37dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLetsIntroduce">
+
+            <ImageView
+                android:id="@+id/ivIconMan2"
+                android:layout_width="38dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_kacuna" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:background="@null"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/font2"
+                android:hint="@string/your_full_name"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/vline2"
+                app:layout_constraintStart_toEndOf="@+id/ivIconMan2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vline2"
+                android:layout_width="291dp"
+                android:layout_height="2dp"
+                android:alpha="0.05"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+            "
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

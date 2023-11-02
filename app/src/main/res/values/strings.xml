@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">designTest</string>
+    <string name="your_full_name">Your full name</string>
+    <string name="username">Username</string>
+    <string name="lets_introduce">lets introduce</string>
+    <string name="hello">Hello!</string>
+</resources>
